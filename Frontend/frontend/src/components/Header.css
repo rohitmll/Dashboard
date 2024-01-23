@@ -1,0 +1,21 @@
+.form-control {
+  width: 30rem;
+  border: 1px solid;
+  border-radius: 36px 14px 36px 14px;
+}
+
+.form {
+  align-content: center;
+  display: inline-block;
+  margin-right: 15rem;
+  margin-left: 5rem;
+  justify-content: space-between;
+}
+
+#offcanvasWithBothOptions {
+  width: 26%;
+}
+
+.offcanvas-body {
+  width: fit-content;
+}
