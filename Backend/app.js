@@ -14,7 +14,7 @@ const Port = process.env.PORT || 4000;
 // connect() --> it's a async function.
 mongoose
   .connect(
-    "mongodb+srv://DB_USER:DB_PASSWORD@cluster0.kc6eqy5.mongodb.net/DB_NAME?retryWrites=true&w=majority"
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.kc6eqy5.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
   )
   .then(() => {
     console.log("MongoDB database is connected!");
