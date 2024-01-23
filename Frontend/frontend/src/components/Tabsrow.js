@@ -21,7 +21,7 @@ const Tabsrow = ({ data, setMainData }) => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:4000/api/data/any/${search}`
+        `https://joyous-overcoat-worm.cyclic.app/any/${search}`
       );
       const responseData = await response.json();
       setMainData(responseData.data);
