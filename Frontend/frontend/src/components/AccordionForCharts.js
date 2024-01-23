@@ -13,7 +13,7 @@ const AccordionForCharts = ({ data }) => {
 
   // const getDataFromDB = async () => {
   //   try {
-  //     const response = await fetch("http://localhost:4000/api/data/all");
+  //     const response = await fetch("https://joyous-overcoat-worm.cyclic.app/api/data/all");
   //     const responseData = await response.json();
   //     setMainData(responseData.data);
   //   } catch (err) {
