@@ -14,7 +14,7 @@ const Filters = ({ setMainData }) => {
   const getDataFromDB = async (year) => {
     try {
       const response = await fetch(
-        `http://localhost:4000/api/data/year/${year}`
+        `https://joyous-overcoat-worm.cyclic.app/api/data/year/${year}`
       );
       const responseData = await response.json();
       setMainData(responseData.data);
@@ -26,7 +26,7 @@ const Filters = ({ setMainData }) => {
   // func to handle the "reset filters button" by making another api call and update state
   const handleReset = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/data/all");
+      const response = await fetch("https://joyous-overcoat-worm.cyclic.app/api/data/all");
       const responseData = await response.json();
       setMainData(responseData.data);
     } catch (err) {
